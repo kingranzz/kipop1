@@ -1328,10 +1328,12 @@ bot.command("delaymention", checkWhatsAppConnection, checkPremium, async ctx => 
 
   await prosesrespone(target, ctx);
 
-  for (let i = 0; i < 25; i++) {
+  for (let i = 0; i < 50; i++) {
         await protocolbug2(target, true)
         await protocolbug3(target, true)
-        await sleep(9000)
+        await protocolbug2(target, true)
+        await protocolbug3(target, true)
+        await sleep(1000)
     
 }
 
